@@ -6,105 +6,126 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <style>
-    body {
+    :root{
+      --bg:#fafafa;
+      --card:#ffffff;
+      --text:#111;
+      --muted:#555;
+      --line:#ddd;
+      --box:#eee;
+    }
+    body{
       font-family: system-ui, Arial, sans-serif;
-      background: #fafafa;
-      padding: 32px;
+      background: var(--bg);
+      color: var(--text);
+      padding: 28px;
       line-height: 1.6;
-      max-width: 760px;
+      max-width: 780px;
       margin: auto;
     }
+    h1{ margin: 8px 0 10px; }
+    .lead{ color: var(--muted); margin-bottom: 18px; }
 
-    h1, h2, h3 {
-      margin-top: 32px;
-    }
-
-    .codebox {
-      display: inline-block;
-      background: #eee;
-      padding: 10px 16px;
-      border-radius: 8px;
-      font-size: 18px;
-      font-weight: bold;
-      margin: 12px 0;
-    }
-
-    .app-block {
-      margin-top: 48px;
-      padding-top: 32px;
-      border-top: 1px solid #ddd;
+    .app-block{
+      margin-top: 28px;
+      padding: 22px 18px;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: var(--card);
       text-align: center;
     }
+    .app-block h2{ margin: 6px 0 10px; }
 
-    img {
+    .codebox{
+      display: inline-block;
+      background: var(--box);
+      padding: 10px 16px;
+      border-radius: 10px;
+      font-size: 18px;
+      font-weight: 800;
+      margin: 10px 0 12px;
+      letter-spacing: 0.2px;
+      word-break: break-word;
+    }
+    .note{
+      color: var(--muted);
+      font-size: 14px;
+      margin: 8px 0 0;
+    }
+
+    img{
       max-width: 260px;
       width: 100%;
       border-radius: 14px;
-      margin: 16px 0;
+      margin: 12px 0 8px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
     }
 
-    .note {
-      color: #555;
-      font-size: 15px;
+    .chars{
+      margin-top: 14px;
+    }
+    .char-text{
+      color: var(--muted);
+      font-size: 14px;
+      margin-top: 8px;
+    }
+
+    .hr{
+      height: 1px;
+      background: var(--line);
+      margin: 24px 0 0;
     }
   </style>
 </head>
 
 <body>
 
-<h1>Itsmyid.cc</h1>
+  <h1>Itsmyid.cc</h1>
+  <p class="lead">Tämä sivu toimii GitHub Pagesissa ja sisältää sovellusten viralliset varmennus- ja omistajuustiedot.</p>
 
-<p>
-Tämä sivu toimii GitHub Pagesissa ja sisältää sovellusten
-viralliset varmennus- ja omistajuustiedot.
-</p>
+  <!-- ========================= -->
+  <!-- SoundFriend -->
+  <!-- ========================= -->
+  <div class="app-block">
+    <h2>SoundFriend – Verification</h2>
 
-<!-- ========================= -->
-<!-- SoundFriend -->
-<!-- ========================= -->
+    <div class="codebox">SF-ITS-myid-2025-ÄÄNI-72941</div>
 
-<div class="app-block">
-  <h2>SoundFriend – Verification</h2>
+    <p class="note">Tämä koodi vahvistaa SoundFriend-sovelluksen omistajuuden.</p>
 
-  <div class="codebox">
-    SF-ITS-myid-2025-ÄÄNI-72941
+    <div class="hr"></div>
+
+    <h2 style="margin-top:18px;">SoundFriend – Characters</h2>
+
+    <!-- Kansikuva (B + C yhdessä) -->
+    <div class="chars">
+      <img src="20251207_194644735.png" alt="Donkey Grandpa & Mother Goose">
+
+      <div class="char-text">
+        Mother Goose – rauhallinen, lohduttava ääni.<br>
+        Donkey Grandpa – viisas, hidas ja lämmin opastus.
+      </div>
+    </div>
   </div>
 
-  <p class="note">
-    Tämä koodi vahvistaa SoundFriend-sovelluksen omistajuuden.
-  </p>
+  <!-- ========================= -->
+  <!-- Bussipukki -->
+  <!-- ========================= -->
+  <div class="app-block">
+    <h2>Bussipukki – Verification</h2>
 
-  <h3>SoundFriend – Characters</h3>
+    <!-- VAIHDA TÄMÄ TIEDOSTONIMI jos se on repossa eri -->
+    <img src="chat_edit_image_20251105_201010.png" alt="Bussipukki">
 
-  <!-- Mother Goose + Donkey Grandpa -->
-  <img src="20251207_194644735.png" alt="Mother Goose and Donkey Grandpa">
+    <!-- TÄSSÄ on nyt “samantyylistä koodia” -->
+    <div class="codebox">BP-ITS-myid-2025-BUSSI-51203</div>
 
-  <p class="note">
-    Mother Goose – rauhallinen, lohduttava ääni.<br>
-    Donkey Grandpa – viisas, hidas ja lämmin opastus.
-  </p>
-</div>
-
-<!-- ========================= -->
-<!-- Bussipukki -->
-<!-- ========================= -->
-
-<div class="app-block">
-  <h2>Bussipukki – Verification</h2>
-
-  <img
-    src="chat_edit_image_20251105_201010.png"
-    alt="Bussipukki sovelluksen kuva">
-
-  <div class="codebox">
-    BUSSIPUKKI – ITSmyid.cc verification
-  </div>
-
-  <p class="note">
-    Bussipukki-sovellus on luotu AppCreator24-palvelussa.<br>
-    Tämä sivu toimii Aptoide-varmennuksena.
-  </p>
-</div>
+    <p class="note">
+      Tämä koodi vahvistaa Bussipukki-sovelluksen omistajuuden / Aptoide-varmennuksen.
+    </p>
+  </div >
 
 </body>
 </html>
