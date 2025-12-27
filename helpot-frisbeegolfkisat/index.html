@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="fi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Helppo frisbeegolf – koekuukausi</title>
+  <meta name="description" content="Matalan kynnyksen frisbeegolf-haaste UDisc-liigassa. Koekuukausi talvella. Pelaa kerran viikossa, kirjaa tulokset UDisciin." />
+  <style>
+    :root{
+      --bg:#0b1220;
+      --card:#111a2e;
+      --text:#e9eefc;
+      --muted:#b7c3e6;
+      --accent:#7dd3fc;
+      --accent2:#a7f3d0;
+      --border:rgba(255,255,255,.12);
+      --shadow: 0 10px 30px rgba(0,0,0,.35);
+      --radius:18px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      background: radial-gradient(1200px 800px at 20% 10%, rgba(125,211,252,.18), transparent 55%),
+                  radial-gradient(900px 700px at 80% 30%, rgba(167,243,208,.14), transparent 50%),
+                  var(--bg);
+      color:var(--text);
+      line-height:1.55;
+    }
+    a{color:var(--accent); text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:980px; margin:0 auto; padding:22px}
+    header{
+      padding:26px 0 8px 0;
+    }
+    .badge{
+      display:inline-flex; gap:10px; align-items:center;
+      padding:8px 12px; border:1px solid var(--border);
+      background: rgba(255,255,255,.06);
+      border-radius:999px; color:var(--muted); font-size:14px;
+    }
+    .dot{width:10px; height:10px; border-radius:99px; background:var(--accent2); box-shadow:0 0 0 4px rgba(167,243,208,.15)}
+    h1{
+      margin:14px 0 10px;
+      font-size: clamp(30px, 4.4vw, 48px);
+      letter-spacing:-.02em;
+      line-height:1.08;
+    }
+    .lead{
+      margin:0 0 18px;
+      font-size: clamp(16px, 1.8vw, 19px);
+      color:var(--muted);
+      max-width: 70ch;
+    }
+    .grid{
+      display:grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap:16px;
+      margin: 18px 0 26px;
+    }
+    .card{
+      grid-column: span 12;
+      background: rgba(255,255,255,.06);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding:18px;
+      overflow:hidden;
+    }
+    @media (min-width: 860px){
+      .card.half{grid-column: span 6;}
+      .card.third{grid-column: span 4;}
+    }
+    .card h2{
+      margin:0 0 8px; font-size:20px; letter-spacing:-.01em;
+    }
+    .pillrow{display:flex; flex-wrap:wrap; gap:10px; margin-top:10px}
+    .pill{
+      border:1px solid var(--border);
+      background: rgba(0,0,0,.18);
+      padding:8px 10px; border-radius:999px;
+      color:var(--muted); font-size:14px;
+    }
+    ul{margin:10px 0 0 18px; color:var(--muted)}
+    li{margin:6px 0}
+    .cta{
+      display:flex; flex-direction:column; gap:10px;
+      margin-top:14px;
+    }
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center; gap:10px;
+      padding:12px 14px;
+      border-radius: 14px;
+      border:1px solid var(--border);
+      background: linear-gradient(180deg, rgba(125,211,252,.20), rgba(125,211,252,.08));
+      color: var(--text);
+      font-weight: 650;
+      cursor:pointer;
+      text-decoration:none;
+      user-select:none;
+    }
+    .btn.secondary{
+      background: rgba(255,255,255,.06);
+      color: var(--text);
+    }
+    .btn:hover{filter: brightness(1.08)}
+    .muted{color:var(--muted)}
+    .small{font-size:14px; color:var(--muted)}
+    .hr{height:1px; background:var(--border); margin:14px 0}
+    footer{padding:22px 0 34px; color:var(--muted); font-size:14px}
+    code.inline{
+      padding:2px 6px; border-radius:8px; border:1px solid var(--border);
+      background: rgba(0,0,0,.18); color:var(--text); font-size: 0.95em;
+    }
+    .kicker{font-weight:700; color:var(--text)}
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <div class="badge"><span class="dot"></span> Talven koekuukausi • UDisc-liiga • Matala kynnys</div>
+      <h1>Helppo frisbeegolf – koekuukausi</h1>
+      <p class="lead">
+        Tehdään meidän tavallisesta viikkopelistä yhteinen, helppo haaste: pelaa kerran viikossa,
+        kirjaa tulokset UDisc-liigaan, ja kerätään samalla liikettä ja hyvää mieltä porukalle.
+        Tämä on <span class="kicker">pilotti</span> – pieni, selkeä ja reilu.
+      </p>
+    </header>
+
+    <section class="grid">
+      <div class="card half">
+        <h2>Mikä tämä on?</h2>
+        <p class="muted">
+          Kuukauden mittainen, matalan kynnyksen frisbeegolf-haaste UDisc-liigassa.
+          Tarkoitus on kannustaa ulos luontoon ja liikkumaan – ei tehdä tästä isoa kisaa.
+        </p>
+        <div class="pillrow">
+          <div class="pill">Kesto: 4 viikkoa</div>
+          <div class="pill">Tahti: 1 kierros / viikko</div>
+          <div class="pill">Tulokset: UDisc League</div>
+          <div class="pill">Osallistujia alussa: 3–5 (arvio)</div>
+        </div>
+      </div>
+
+      <div class="card half">
+        <h2>Kenelle?</h2>
+        <p class="muted">
+          Ensisijaisesti ILA ry:n WhatsApp-yhteisöille ja tutuille, jotka haluavat
+          <strong>helpon</strong> tavan päästä liikkeelle.
+        </p>
+        <ul>
+          <li>Ei tarvitse olla “hyvä pelaaja”</li>
+          <li>Riittää että käyt kävelyllä ja heität kiekkoa</li>
+          <li>Talvella tulos ei ole tärkein – rutiini on</li>
+        </ul>
+      </div>
+
+      <div class="card third">
+        <h2>Näin osallistut</h2>
+        <ol class="muted" style="margin:10px 0 0 18px;">
+          <li>Liity UDisc-liigaan (linkki alle)</li>
+          <li>Pelaa 1 kierros viikossa</li>
+          <li>Kirjaa tulos UDisciin</li>
+        </ol>
+        <div class="cta">
+          <a class="btn" href="#liity">➡️ Liity liigaan</a>
+          <a class="btn secondary" href="#saannot">📜 Lue säännöt</a>
+        </div>
+      </div>
+
+      <div class="card third">
+        <h2>Radat</h2>
+        <p class="muted">
+          Koekuukaudessa voit valita radat vapaasti (turvallisuus ja järki ensin).
+          Keväällä voidaan lukita 2–3 rataa, jos porukka kasvaa.
+        </p>
+        <p class="small">Vinkki: jos on 9-väyläinen rata, sovitaan yksi selkeä formaatti (esim. 18 väylää = 2 kierrosta).</p>
+      </div>
+
+      <div class="card third">
+        <h2>Palkinnot</h2>
+        <p class="muted">
+          Koekuukausi voidaan vetää ilman palkintoja tai hyvin pienillä tuotepalkinnoilla.
+          Keväällä voidaan käyttää <strong>vapaaehtoista osallistumismaksua</strong> palkintopottiin, jos porukka haluaa.
+        </p>
+        <p class="small">
+          Huom: mahdollinen “holaripotti” voidaan ottaa käyttöön vain, jos osallistujia on selvästi enemmän kuin 3.
+        </p>
+      </div>
+
+      <div class="card" id="saannot">
+        <h2>Säännöt lyhyesti</h2>
+        <ul>
+          <li><strong>Aikajakso:</strong> 4 viikkoa (koekuukausi). Päivämäärät näkyvät UDisc-liigassa.</li>
+          <li><strong>Tahti:</strong> 1 tulosviikko / osallistuja (yhteensä 4 tulosta).</li>
+          <li><strong>Kirjaus:</strong> tulokset kirjataan UDisc-liigaan. UDisc toimii “tuomarina”.</li>
+          <li><strong>Reiluus:</strong> samat säännöt kaikille. Ei “parhaiden kierrosten valikointia” jos niin sovitaan – päätetään etukäteen.</li>
+          <li><strong>Järjestäjän rooli:</strong> järjestäjä voi osallistua testimielessä, mutta <strong>ei lunasta palkintoja</strong> (jos palkintoja on).</li>
+          <li><strong>Turvallisuus:</strong> pelaa oman kunnon mukaan, huomioi keli ja radan säännöt. Ei riskinottoa.</li>
+        </ul>
+        <div class="hr"></div>
+        <p class="small">
+          Jos haluat “virallisemmat säännöt” (esim. 9-väylä/18-väylä, OB:t, puttirajat), ne voidaan lisätä myöhemmin.
+          Koekuukausi pidetään tarkoituksella yksinkertaisena.
+        </p>
+      </div>
+
+      <div class="card half" id="liity">
+        <h2>Liity UDisc-liigaan</h2>
+        <p class="muted">
+          Lisää tähän sinun UDisc League -kutsulinkki.
+        </p>
+        <p class="small">
+          Korvaa tämä teksti omalla linkillä: <code class="inline">https://udisc.com/...</code>
+        </p>
+        <div class="cta">
+          <a class="btn" href="https://udisc.com/" target="_blank" rel="noopener">🔗 Avaa UDisc (vaihda tähän kutsulinkki)</a>
+        </div>
+      </div>
+
+      <div class="card half">
+        <h2>Yhteys & yhteistyö</h2>
+        <p class="muted">
+          Talven aikana voidaan lähestyä sponsoreita <strong>tuotepalkinnoista</strong> (kiekot, pienet lahjakortit).
+          Jos ILA ry haluaa tukea pilotin alkuun pienesti, se voidaan sopia erikseen.
+        </p>
+        <ul>
+          <li><strong>Järjestäjä:</strong> (täytä nimi) / Itsmyid Oy</li>
+          <li><strong>Yhteistyö:</strong> ILA ry (täsmennetään, jos mukana)</li>
+          <li><strong>Yhteydenotto:</strong> (täytä sähköposti / WhatsApp)</li>
+        </ul>
+        <p class="small">
+          Tavoite: keväällä selkeä 30 päivän haaste, 2–3 rataa, pieni palkintopotti – mutta vain jos pilotti toimii.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Tilannepäivitykset</h2>
+        <p class="muted">
+          Haluatko blogin tai “uutiset”-osion? Helpoin aluksi on yksi lista tähän sivulle.
+        </p>
+        <ul>
+          <li><strong>Päiväys:</strong> Koekuukausi suunnitteilla – UDisc-liiga avataan pian.</li>
+          <li><strong>Päiväys:</strong> Ensimmäinen viikko pelattu – kelit huomioiden!</li>
+        </ul>
+        <p class="small">Tämän voi myöhemmin siirtää WordPressiin tai tehdä erilliseksi <code class="inline">blogi.html</code>-sivuksi.</p>
+      </div>
+    </section>
+
+    <footer>
+      <div class="hr"></div>
+      <p>
+        <strong>Vastuuvapaus:</strong> Tämä on harrastepohjainen koekuukausi. Osallistut omalla vastuulla.
+        Ei ammatillista ohjausta tai terveyslupausta. Jos sinulla on terveyshuolia, kysy ammattilaiselta.
+      </p>
+      <p class="small">
+        © <span id="y"></span> Helppo frisbeegolf – koekuukausi
+      </p>
+      <section class="card" id="udisc-en">
+  <h2>For UDisc / English summary</h2>
+
+  <p class="muted">
+    This page describes a small pilot disc golf league (“test month”) created to
+    explore a flexible, low-threshold league format during winter.
+  </p>
+
+  <ul>
+    <li><strong>Duration:</strong> 4 weeks</li>
+    <li><strong>Frequency:</strong> 1 round per player per week</li>
+    <li><strong>Platform:</strong> UDisc League</li>
+    <li><strong>Courses:</strong> Open locations (players choose where to play)</li>
+    <li><strong>Validation:</strong> Rounds must be recorded in UDisc and visible in player history</li>
+  </ul>
+
+  <p class="muted">
+    <strong>Purpose:</strong><br>
+    Encourage weekly outdoor activity with a flexible and simple structure.
+    This is a non-commercial pilot focused on participation, not competition.
+  </p>
+
+  <p class="muted">
+    <strong>Notes:</strong><br>
+    • Organizer may participate for testing purposes but is not eligible for prizes<br>
+    • No mandatory fees during the pilot period<br>
+    • Final league settings will follow UDisc’s recommendations
+  </p>
+
+  <p class="small">
+    This English summary is provided for UDisc review and clarification only.
+    The primary audience of the project is local Finnish participants.
+  </p>
+</section>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
