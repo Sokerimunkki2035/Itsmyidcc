@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Helpot frisbeegolfkisat – koekuukausi</title>
-  <meta name="description" content="Matalan kynnyksen frisbeegolf-koekuukausi: 4 viikkoa, 3 tulosta per osallistuja, avoimet radat, vapaaehtoinen holaripotti ja selkeät säännöt." />
+  <title>Helppo frisbeegolf – koekuukausi</title>
+  <meta name="description" content="Matalan kynnyksen frisbeegolf-koekuukausi. Pelaa 3 kierrosta 4 viikon aikana, avoimet radat ja tulosten kirjaus UDisc-sovelluksella." />
 
   <style>
     :root{
@@ -26,8 +26,8 @@
       margin: 0 auto;
     }
     header{
-      margin: 10px 0 18px;
       text-align: center;
+      margin-bottom: 20px;
     }
     h1{
       margin: 10px 0 8px;
@@ -35,8 +35,8 @@
     }
     .tagline{
       color: var(--muted);
-      margin: 0 auto 10px;
-      max-width: 52ch;
+      max-width: 55ch;
+      margin: 0 auto;
     }
     .pillbar{
       display: flex;
@@ -53,9 +53,6 @@
       font-size: 13px;
       color: var(--muted);
     }
-    main{
-      margin-top: 18px;
-    }
     .card{
       background: var(--card);
       border: 1px solid var(--line);
@@ -67,42 +64,11 @@
       margin: 6px 0 10px;
       font-size: 20px;
     }
-    ul{
-      margin: 10px 0 0 18px;
-    }
-    .grid{
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 12px;
-    }
-    @media (min-width: 740px){
-      .grid{
-        grid-template-columns: 1fr 1fr;
-      }
-    }
-    .kv{
-      display: grid;
-      gap: 8px;
-      margin-top: 10px;
-    }
-    .kv div{
-      display: flex;
-      gap: 10px;
-      align-items: baseline;
-      padding: 10px 12px;
-      background: var(--bg);
-      border: 1px solid var(--line);
-      border-radius: 12px;
-    }
-    .k{
-      min-width: 110px;
-      font-weight: 700;
-    }
-    .v{
-      color: var(--muted);
+    ul, ol{
+      margin-left: 18px;
     }
     .notice{
-      background: #fff;
+      background: var(--bg);
       border: 1px dashed var(--line);
       border-radius: 14px;
       padding: 14px 12px;
@@ -116,153 +82,138 @@
       text-align: center;
       margin: 18px 0 8px;
     }
-    a{ color: var(--accent); }
   </style>
 </head>
 
 <body>
 
-  <header>
-    <h1>Helppo frisbeegolf – koekuukausi</h1>
-    <p class="tagline">
-      Tehdään tavallisesta viikkopelistä yhteinen, helppo haaste: pelaa koekuukauden aikana
-      kolme kertaa, kirjaa tulos, ja kerätään liikettä ja hyvää mieltä porukalle.
+<header>
+  <h1>Helppo frisbeegolf – koekuukausi</h1>
+  <p class="tagline">
+    Tehdään tavallisesta viikkopelistä yhteinen, helppo haaste:
+    pelaa koekuukauden aikana kolme kierrosta ja kerätään liikettä ja hyvää mieltä porukalle.
+  </p>
+  <div class="pillbar">
+    <span class="pill">Talven koekuukausi</span>
+    <span class="pill">Matala kynnys</span>
+    <span class="pill">Avoimet radat</span>
+    <span class="pill">3 tulosta</span>
+  </div>
+</header>
+
+<main>
+
+  <section class="card">
+    <h2>Mikä tämä on?</h2>
+    <p>
+      Kuukauden mittainen, matalan kynnyksen frisbeegolf-haaste.
+      Tarkoitus on kannustaa ulos luontoon ja liikkumaan –
+      ei tehdä tästä isoa tai virallista kilpailua.
     </p>
-    <div class="pillbar">
-      <span class="pill">Talven koekuukausi</span>
-      <span class="pill">Matala kynnys</span>
-      <span class="pill">Avoimet radat</span>
-      <span class="pill">3 tulosta</span>
+    <ul>
+      <li><strong>Kesto:</strong> 4 viikkoa</li>
+      <li><strong>Tahti:</strong> 3 tulosta / osallistuja koekuukauden aikana</li>
+      <li><strong>Osallistujia alussa:</strong> 3–5 (arvio)</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>Kenelle?</h2>
+    <ul>
+      <li>ILA ry:n WhatsApp-yhteisöille ja tutuille</li>
+      <li>Ei tarvitse olla “hyvä pelaaja”</li>
+      <li>Riittää että käyt kävelyllä ja heität kiekkoa</li>
+      <li>Talvella tulos ei ole tärkein – rutiini on</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>Näin osallistut</h2>
+    <ol>
+      <li>Pelaa kierros silloin kun sinulle sopii</li>
+      <li>Kirjaa kierros UDisc-sovelluksella</li>
+      <li>Toista yhteensä <strong>3 kertaa</strong> koekuukauden aikana</li>
+    </ol>
+  </section>
+
+  <section class="card">
+    <h2>Tulosten kirjaaminen</h2>
+    <p>
+      Kierrokset kirjataan <strong>UDisc-sovelluksella</strong>.
+      UDisc toimii tulosten kirjaustyökaluna, ei kilpailun järjestäjänä.
+    </p>
+    <ul>
+      <li>Kierros tallennetaan pelaajan omaan UDisc-historiaan</li>
+      <li>Tulokset ovat tarvittaessa tarkistettavissa</li>
+    </ul>
+    <div class="notice">
+      UDisc-liigaa ei käytetä. Tämä ei ole UDiscin virallinen liiga tai kilpailu.
     </div>
-  </header>
+  </section>
 
-  <main>
+  <section class="card">
+    <h2>Radat</h2>
+    <p>
+      Pelataan <strong>kaikille avoimilla frisbeegolfradoilla</strong>.
+      Alussa radat ovat vapaat, jotta osallistuminen on mahdollisimman helppoa.
+    </p>
+    <p>
+      Jos osallistujia tulee lisää ja toiminta lähtee kunnolla käyntiin,
+      ratojen valinnasta voidaan myöhemmin päättää yhdessä porukalla.
+    </p>
+    <div class="notice">
+      Vinkki: 9-väyläisellä radalla voidaan pelata esim. 18 väylää (2 kierrosta).
+    </div>
+  </section>
 
-    <section class="card">
-      <h2>Mikä tämä on?</h2>
-      <p>
-        Kuukauden mittainen, matalan kynnyksen frisbeegolf-haaste. Tarkoitus on kannustaa ulos luontoon
-        ja liikkumaan – ei tehdä tästä isoa tai virallista kilpailua.
-      </p>
+  <section class="card">
+    <h2>Palkinnot</h2>
+    <p>
+      Koekuukausi voidaan toteuttaa ilman palkintoja tai pienillä tuotepalkinnoilla.
+      Mahdollinen <strong>holaripotti</strong> toimii jo <strong>3 osallistujalla</strong>
+      ja on vapaaehtoinen.
+    </p>
+  </section>
 
-      <div class="kv" aria-label="Perustiedot">
-        <div><span class="k">Kesto</span><span class="v">4 viikkoa</span></div>
-        <div><span class="k">Tahti</span><span class="v">3 tulosta / osallistuja (koekuukauden aikana)</span></div>
-        <div><span class="k">Alussa</span><span class="v">3–5 osallistujaa (arvio)</span></div>
-      </div>
-    </section>
+  <section class="card">
+    <h2>Säännöt lyhyesti</h2>
+    <ul>
+      <li>Samat pelisäännöt kaikille</li>
+      <li>Ei parhaiden kierrosten valikointia, ellei sovita yhdessä</li>
+      <li>Järjestäjä voi osallistua testimielessä, mutta ei lunasta palkintoja</li>
+      <li>Pelaa oman kunnon mukaan ja huomioi keli</li>
+    </ul>
+  </section>
 
-    <section class="card">
-      <h2>Kenelle?</h2>
-      <p>
-        Ensisijaisesti ILA ry:n WhatsApp-yhteisöille ja tutuille, jotka haluavat <strong>helpon</strong> tavan päästä liikkeelle.
-      </p>
-      <ul>
-        <li>Ei tarvitse olla “hyvä pelaaja”</li>
-        <li>Riittää että käyt kävelyllä ja heität kiekkoa</li>
-        <li>Talvella tulos ei ole tärkein – rutiini on</li>
-      </ul>
-    </section>
+  <section class="card">
+    <h2>Yhteys & yhteistyö</h2>
+    <ul>
+      <li><strong>Kilpailutoiminta:</strong> ILA ry</li>
+      <li><strong>Tekninen alusta ja verkkosivut:</strong> Itsmyid Oy</li>
+      <li><strong>Yhteistyö:</strong> mahdolliset tuotepalkinnot sovitaan ILA ry:n kautta</li>
+    </ul>
+  </section>
 
-    <section class="card">
-      <h2>Näin osallistut</h2>
-      <ol>
-        <li>Pelaa kierros silloin kun sinulle sopii</li>
-        <li>Kirjaa tulos sovitulla tavalla</li>
-        <li>Toista yhteensä <strong>3 kertaa</strong> koekuukauden aikana</li>
-      </ol>
+  <section class="card">
+    <h2>Tilannepäivitykset</h2>
+    <ul>
+      <li>Koekuukausi suunnitteilla</li>
+      <li>Pilotti käynnissä</li>
+      <li>Koekuukausi päätetty – jatkosta sovitaan yhdessä</li>
+    </ul>
+  </section>
 
-      <div class="notice">
-        <strong>Huom:</strong> Pilotti pidetään tarkoituksella yksinkertaisena. Jos osallistujia tulee lisää,
-        sovitaan porukalla mahdollisista tarkennuksista myöhemmin.
-      </div>
-    </section>
+  <section class="card">
+    <h2>Vastuuvapaus</h2>
+    <div class="notice">
+      Tämä on harrastepohjainen koekuukausi. Osallistut omalla vastuulla.
+      Ei ammatillista ohjausta tai terveyslupausta.
+    </div>
+  </section>
 
-    <section class="card">
-      <h2>Radat</h2>
-      <p>
-        Pelataan <strong>kaikille avoimilla frisbeegolfradoilla</strong>. Tämä tekee osallistumisesta helpointa ja reiluinta kaikille.
-        Alussa radat ovat vapaat – jokainen voi valita itselleen sopivan radan.
-      </p>
-      <p>
-        Jos kilpailumuoto lähtee kunnolla liikkeelle ja osallistujia tulee mukaan,
-        ratojen valinnasta voidaan myöhemmin päättää yhdessä porukalla.
-      </p>
-      <div class="notice">
-        <strong>Vinkki:</strong> Jos rata on 9-väyläinen, sovitaan selkeä formaatti (esim. 18 väylää = 2 kierrosta).
-      </div>
-    </section>
+  <p class="footer">© 2025 Helppo frisbeegolf – koekuukausi</p>
 
-    <section class="card">
-      <h2>Palkinnot</h2>
-      <p>
-        Koekuukausi voidaan toteuttaa ilman palkintoja tai hyvin pienillä tuotepalkinnoilla.
-        Mahdollinen <strong>holaripotti</strong> toimii jo <strong>3 osallistujalla</strong> – pidetään se yksinkertaisena ja vapaaehtoisena.
-      </p>
-      <p>
-        Keväällä voidaan keskustella vapaaehtoisesta osallistumismaksusta ja pienestä palkintopotista
-        vain jos porukka niin haluaa.
-      </p>
-    </section>
-
-    <section class="card">
-      <h2>Säännöt lyhyesti</h2>
-      <ul>
-        <li><strong>Aikajakso:</strong> 4 viikkoa (koekuukausi)</li>
-        <li><strong>Tahti:</strong> 3 tulosta / osallistuja koekuukauden aikana</li>
-        <li><strong>Reiluus:</strong> samat pelisäännöt kaikille</li>
-        <li><strong>Valikointi:</strong> ei “parhaiden kierrosten poimintaa”, ellei niin sovita yhdessä etukäteen</li>
-        <li><strong>Järjestäjän rooli:</strong> järjestäjä voi osallistua testimielessä, mutta ei lunasta palkintoja</li>
-        <li><strong>Turvallisuus:</strong> pelaa oman kunnon mukaan, huomioi keli ja radan säännöt</li>
-      </ul>
-
-      <div class="notice">
-        Jos halutaan myöhemmin tarkempia sääntöjä (esim. 9/18-väylät, OB:t), ne voidaan lisätä myöhemmin.
-        Koekuukausi pidetään tarkoituksella yksinkertaisena.
-      </div>
-    </section>
-
-    <section class="card">
-      <h2>Yhteys &amp; yhteistyö</h2>
-
-      <div class="grid">
-        <div class="notice" style="margin:0;">
-          <strong>Kilpailutoiminta:</strong> ILA ry<br>
-          <strong>Tekninen alusta ja verkkosivut:</strong> Itsmyid Oy
-        </div>
-
-        <div class="notice" style="margin:0;">
-          <strong>Yhteistyö:</strong> mahdolliset tuotepalkinnot ja tukijat sovitaan erikseen ILA ry:n kautta<br>
-          <strong>Yhteydenotto:</strong> (täytetään myöhemmin)
-        </div>
-      </div>
-
-      <p style="margin-top:12px;">
-        Tavoite: keväällä selkeä 30 päivän haaste – mutta vain jos pilotti toimii ja porukka haluaa jatkaa.
-      </p>
-    </section>
-
-    <section class="card">
-      <h2>Tilannepäivitykset</h2>
-      <p>Tilannepäivitykset pidetään tällä sivulla yksinkertaisena listana.</p>
-      <ul>
-        <li><strong>Päiväys:</strong> Koekuukausi suunnitteilla</li>
-        <li><strong>Päiväys:</strong> Pilotti käynnissä</li>
-        <li><strong>Päiväys:</strong> Koekuukausi päätetty – jatkosta sovitaan yhdessä</li>
-      </ul>
-    </section>
-
-    <section class="card">
-      <h2>Vastuuvapaus</h2>
-      <p class="notice" style="margin:0;">
-        Tämä on harrastepohjainen koekuukausi. Osallistut omalla vastuulla.
-        Ei ammatillista ohjausta tai terveyslupausta. Jos sinulla on terveyshuolia, kysy ammattilaiselta.
-      </p>
-    </section>
-
-    <p class="footer">© 2025 Helppo frisbeegolf – koekuukausi</p>
-
-  </main>
+</main>
 
 </body>
 </html>
