@@ -2,8 +2,9 @@
 <html lang="fi">
 <head>
   <meta charset="utf-8">
-  <title>Itsmyid.cc</title>
+  <title>Itsmyid.cc – Kilpailut ja sovellukset</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Itsmyid.cc – Helpot frisbeegolfkisat sekä sovellusten viralliset varmennus- ja omistajuustiedot.">
 
   <style>
     :root{
@@ -13,6 +14,7 @@
       --muted:#555;
       --line:#ddd;
       --box:#eee;
+      --accent:#1e88e5;
     }
     body{
       font-family: system-ui, Arial, sans-serif;
@@ -57,10 +59,8 @@
       max-width: 260px;
       width: 100%;
       border-radius: 14px;
-      margin: 12px 0 8px;
+      margin: 12px auto 8px;
       display: block;
-      margin-left: auto;
-      margin-right: auto;
     }
 
     .chars{
@@ -75,7 +75,21 @@
     .hr{
       height: 1px;
       background: var(--line);
-      margin: 24px 0 0;
+      margin: 24px 0;
+    }
+
+    .cta{
+      display: inline-block;
+      margin-top: 14px;
+      padding: 14px 22px;
+      background: var(--accent);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 700;
+      border-radius: 12px;
+    }
+    .cta:hover{
+      opacity: 0.9;
     }
   </style>
 </head>
@@ -83,7 +97,26 @@
 <body>
 
   <h1>Itsmyid.cc</h1>
-  <p class="lead">Tämä sivu toimii GitHub Pagesissa ja sisältää sovellusten viralliset varmennus- ja omistajuustiedot.</p>
+  <p class="lead">
+    Itsmyid.cc toimii kilpailusivuna ja sisältää lisäksi sovellusten viralliset
+    varmennus- ja omistajuustiedot.
+  </p>
+
+  <!-- ========================= -->
+  <!-- Frisbeegolfkilpailut -->
+  <!-- ========================= -->
+  <div class="app-block">
+    <h2>Helpot frisbeegolfkisat</h2>
+
+    <p>
+      Matalan kynnyksen frisbeegolfkilpailut kaikille.<br>
+      Ei lisenssipakkoa – helppo osallistua.
+    </p>
+
+    <a class="cta" href="/helpot-frisbeegolfkisat/">
+      👉 Siirry kilpailusivulle
+    </a>
+  </div>
 
   <!-- ========================= -->
   <!-- SoundFriend -->
@@ -97,9 +130,8 @@
 
     <div class="hr"></div>
 
-    <h2 style="margin-top:18px;">SoundFriend – Characters</h2>
+    <h2>SoundFriend – Characters</h2>
 
-    <!-- Kansikuva (B + C yhdessä) -->
     <div class="chars">
       <img src="20251207_194644735.png" alt="Donkey Grandpa & Mother Goose">
 
@@ -116,22 +148,23 @@
   <div class="app-block">
     <h2>Bussipukki – Verification</h2>
 
-    <!-- VAIHDA TÄMÄ TIEDOSTONIMI jos se on repossa eri -->
     <img src="chat_edit_image_20251105_201010.png" alt="Bussipukki">
 
-    <!-- TÄSSÄ on nyt “samantyylistä koodia” -->
     <div class="codebox">BP-ITS-myid-2025-BUSSI-51203</div>
 
     <p class="note">
       Tämä koodi vahvistaa Bussipukki-sovelluksen omistajuuden / Aptoide-varmennuksen.
-    <hr>
+    </p>
 
-<h2>Muut palvelut</h2>
+    <div class="hr"></div>
 
-<p>
-  <a href="klapikone.html">Klapikoneen vuokraus ja tekijä</a>
-</p>
-    </div >
+    <h2>Muut palvelut</h2>
+
+    <p>
+      <a href="klapikone.html">Klapikoneen vuokraus ja tekijä</a>
+    </p>
+  </div>
 
 </body>
 </html>
+ 
