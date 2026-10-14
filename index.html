@@ -2,9 +2,13 @@
 <html lang="fi">
 <head>
   <meta charset="utf-8">
-  <title>Itsmyid.cc – Kilpailut ja sovellukset</title>
+  <title>Itsmyid.cc – Palvelut ja sovellukset</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Itsmyid.cc – Helpot frisbeegolfkisat sekä sovellusten viralliset varmennus- ja omistajuustiedot.">
+  <meta name="description" content="Itsmyid.cc – Klapikoneen vuokraus sekä sovellukset.">
+
+  <!-- Varmennuskoodit piilossa hakukoneille ja sovelluskaupoille -->
+  <meta name="soundfriend-verification" content="SF-ITS-myid-2025-ÄÄNI-72941">
+  <meta name="bussipukki-verification" content="BP-ITS-myid-2025-BUSSI-51203">
 
   <style>
     :root{
@@ -13,7 +17,6 @@
       --text:#111;
       --muted:#555;
       --line:#ddd;
-      --box:#eee;
       --accent:#1e88e5;
     }
     body{
@@ -26,62 +29,41 @@
       margin: auto;
     }
     h1{ margin: 8px 0 10px; }
-    .lead{ color: var(--muted); margin-bottom: 18px; }
+    .lead{ color: var(--muted); margin-bottom: 24px; }
 
     .app-block{
-      margin-top: 28px;
-      padding: 22px 18px;
+      margin-top: 20px;
+      padding: 24px 18px;
       border: 1px solid var(--line);
       border-radius: 16px;
       background: var(--card);
       text-align: center;
     }
-    .app-block h2{ margin: 6px 0 10px; }
-
-    .codebox{
-      display: inline-block;
-      background: var(--box);
-      padding: 10px 16px;
-      border-radius: 10px;
-      font-size: 18px;
-      font-weight: 800;
-      margin: 10px 0 12px;
-      letter-spacing: 0.2px;
-      word-break: break-word;
-    }
-    .note{
-      color: var(--muted);
-      font-size: 14px;
-      margin: 8px 0 0;
-    }
+    .app-block h2{ margin: 6px 0 12px; }
 
     img{
-      max-width: 260px;
+      max-width: 280px;
       width: 100%;
       border-radius: 14px;
       margin: 12px auto 8px;
       display: block;
+      transition: transform 0.2s ease, opacity 0.2s ease;
+    }
+    .img-link:hover img{
+      transform: scale(1.02);
+      opacity: 0.95;
     }
 
-    .chars{
-      margin-top: 14px;
-    }
     .char-text{
       color: var(--muted);
       font-size: 14px;
       margin-top: 8px;
     }
 
-    .hr{
-      height: 1px;
-      background: var(--line);
-      margin: 24px 0;
-    }
-
     .cta{
       display: inline-block;
-      margin-top: 14px;
-      padding: 14px 22px;
+      margin-top: 10px;
+      padding: 14px 24px;
       background: var(--accent);
       color: #fff;
       text-decoration: none;
@@ -98,73 +80,50 @@
 
   <h1>Itsmyid.cc</h1>
   <p class="lead">
-    Itsmyid.cc toimii kilpailusivuna ja sisältää lisäksi sovellusten viralliset
-    varmennus- ja omistajuustiedot.
+    Palvelut ja sovellukset.
   </p>
 
   <!-- ========================= -->
-  <!-- Frisbeegolfkilpailut -->
+  <!-- 1. Klapikoneen vuokraus (PÄÄLLIMMÄISENÄ) -->
   <!-- ========================= -->
   <div class="app-block">
-    <h2>Helpot frisbeegolfkisat</h2>
-
+    <h2>Klapikoneen vuokraus ja tekijä</h2>
     <p>
-      Matalan kynnyksen frisbeegolfkilpailut kaikille.<br>
-      Ei lisenssipakkoa – helppo osallistua.
+      Polttopuiden tekoa helposti ja tehokkaasti. Vuokraa kalusto tai tilaa työt tekijän kanssa.
     </p>
-
-    <a class="cta" href="/helpot-frisbeegolfkisat/">
-      👉 Siirry kilpailusivulle
+    <a class="cta" href="klapikone.html">
+      👉 Siirry klapikoneen vuokraukseen
     </a>
   </div>
 
   <!-- ========================= -->
-  <!-- SoundFriend -->
+  <!-- 2. SoundFriend (LINKKI KUVAN KAUTTA) -->
   <!-- ========================= -->
   <div class="app-block">
-    <h2>SoundFriend – Verification</h2>
-
-    <div class="codebox">SF-ITS-myid-2025-ÄÄNI-72941</div>
-
-    <p class="note">Tämä koodi vahvistaa SoundFriend-sovelluksen omistajuuden.</p>
-
-    <div class="hr"></div>
-
-    <h2>SoundFriend – Characters</h2>
-
-    <div class="chars">
+    <h2>SoundFriend</h2>
+    
+    <a class="img-link" href="soundfriend.html" title="Avaa SoundFriend">
       <img src="20251207_194644735.png" alt="Donkey Grandpa & Mother Goose">
+    </a>
 
-      <div class="char-text">
-        Mother Goose – rauhallinen, lohduttava ääni.<br>
-        Donkey Grandpa – viisas, hidas ja lämmin opastus.
-      </div>
+    <div class="char-text">
+      <strong>Mother Goose</strong> – rauhallinen, lohduttava ääni.<br>
+      <strong>Donkey Grandpa</strong> – viisas, hidas ja lämmin opastus.
     </div>
   </div>
 
   <!-- ========================= -->
-  <!-- Bussipukki -->
-  <!-- ========================= -->
+  <!-- Frisbeegolfkilpailut (PIILOSSA ODOTTAMASSA) -->
+  <!-- 
   <div class="app-block">
-    <h2>Bussipukki – Verification</h2>
-
-    <img src="chat_edit_image_20251105_201010.png" alt="Bussipukki">
-
-    <div class="codebox">BP-ITS-myid-2025-BUSSI-51203</div>
-
-    <p class="note">
-      Tämä koodi vahvistaa Bussipukki-sovelluksen omistajuuden / Aptoide-varmennuksen.
-    </p>
-
-    <div class="hr"></div>
-
-    <h2>Muut palvelut</h2>
-
+    <h2>Helpot frisbeegolfkisat</h2>
     <p>
-      <a href="klapikone.html">Klapikoneen vuokraus ja tekijä</a>
+      Matalan kynnyksen frisbeegolfkilpailut kaikille.<br>
+      Ei lisenssipakkoa – helppo osallistua.
     </p>
+    <a class="cta" href="/helpot-frisbeegolfkisat/">👉 Siirry kilpailusivulle</a>
   </div>
+  -->
 
 </body>
 </html>
- 
